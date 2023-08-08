@@ -1,0 +1,270 @@
+#im1{
+    margin: 20px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Roboto', sans-serif; */
+}
+.container{
+    width: 100%;
+    height: 100vh; /* viewport height */
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.navbar{
+    display: flex; /*to disply side by side*/
+    justify-content: space-between;
+    align-items: center;
+    width: 85%; 
+}
+.linknavbar{
+    display: inline-block; /*to display the list in single line*/
+    margin: 15px;
+}
+.linknav{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+}
+.logo{
+    width: 130px;
+}
+
+/* pseudo class */
+/* selector:pseudo(property:value;) */
+.linknav:hover{
+    color: red;
+    font-weight: 300px;
+}
+
+.homecntnt{
+    margin-top: 13%;
+    margin-left: 8%;
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.download{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    padding: 7px;
+    
+}
+#lastname{
+    color: rgb(145, 145, 3);
+}
+.title_p{
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+}
+.images{
+    position: absolute;
+    width: 45%;
+    height: 80%;
+    bottom: 0px;
+    right: 30px;
+}
+.images img /*decentent selector*/{
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0%;
+    transform: translatex(-50%); /* To remove scrolling in x or y direction*/
+    transition: bottom 1s, left 1s;/*to give transition for moving places*/
+}
+.images:hover #shape{
+    bottom: 10%;
+}
+.images:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 20% 8% 0 8%;
+
+}
+.heading{
+    text-align: center;
+    
+}
+.heading h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-bottom: -3px;
+} 
+.heading span{
+    font-size: 20px;
+    color: rgb(1, 103, 69);
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.about_content{
+    display: grid; /*as same as flex also we can give dimentions */
+    grid-template-columns: repeat(2, 1fr); /* 1frm = 255px */
+    margin-top: 50px;
+    gap: 3rem;/* 1rem = 16px */
+}
+.about_details p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.about_images img{
+    width: 80%;
+    border-radius: 1rem;
+    margin-top: 0px;
+}
+.information{
+    margin: 20px 0;
+}
+.infobox{
+    margin-bottom: 1rem;
+}
+.infobox span{
+    margin-left: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#skill{
+    margin: 30px 10px 0px 10px;
+}
+.skill_head{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.skill_head h2{
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.skill_head span{
+    color: rgb(3, 94, 3);
+    font-weight: 400;
+    
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.progress{
+    margin-top: 2rem;
+}
+.bar-container {
+    display: flex;
+    margin-left: 18%;  
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 0px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.bar-container span{
+    color: rgb(174, 124, 7);
+    /* margin-left: 500px; */
+    font-weight: bold;
+    
+}
+.base-bar{
+    width: 100%;
+    height: 0.6rem;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius:5px;
+}
+.html-bar{
+    width: 95%;
+    background-color: rgb(251, 189, 57);
+}
+.css-bar{
+    width: 88%;
+    background-color: rgb(251, 189, 57);
+}
+.js-bar{
+    width: 89%;
+    background-color: rgb(251, 189, 57);
+}
+.react-bar{
+    width: 85%;
+    background-color: rgb(251, 189, 57);
+}
+
+.skillimage img{
+    width: 85%;
+    padding-left: 4rem;
+}
+.contacthead{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.contacthead h3{
+    font-weight: bold;
+    font-size: 30px;
+}
+.contacthead span{
+    color: rgb(1, 59, 1);
+    font-size: 18px;
+}
+.icon-set{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.icon, .arrow{
+    display: flex;
+    align-items: center;/*to aline verticaly center*/
+    justify-content: center; /*to aline horizontaly center*/
+    padding: 8px;
+    /* zoom: 160%; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.icon i{
+    font-size: 30px;
+    color:black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(218, 255, 8),rgb(203, 0, 112));
+}
+.icon:hover i{
+    color: white;
+    animation: shake 1s ; /* giving name to the annimation */
+}
+@keyframes shake{        /* to give annimations */
+    10%{transform: rotate(20deg);}
+    20%{transform: rotate(-20deg);}
+    40%{transform: rotate(20deg);}
+    80%{transform: rotate(-20deg);}
+}
+.footer-contain{
+    /* display: flex; */
+    margin: 3rem 0px;
+}
+.arrow{
+    font-size: 30px;
+    float: right;
+    background-image: linear-gradient(to bottom right,rgb(218, 255, 8),rgb(203, 0, 112));
+    margin: 10px;
+}
+.arrow:hover i{
+    color: rgb(255, 255, 255);
+}
